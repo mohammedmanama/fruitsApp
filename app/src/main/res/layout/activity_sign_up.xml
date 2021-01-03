@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <include
+        android:id="@+id/mainIn"
+        layout="@layout/toolbar_design" />
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="165dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="Name"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/nameEd"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/nameEd"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/phoneTv"
+        android:layout_width="174dp"
+        android:layout_height="44dp"
+        android:text="Phone"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/phoneEd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nameTv"
+        app:layout_constraintTop_toBottomOf="@+id/nameTv" />
+
+    <EditText
+        android:id="@+id/phoneEd"
+        android:layout_width="163dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/nameEd"
+        app:layout_constraintTop_toBottomOf="@+id/nameEd" />
+
+    <TextView
+        android:id="@+id/passwordTv"
+        android:layout_width="178dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="8dp"
+        android:text="Password"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/passwordEd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/phoneTv"
+        app:layout_constraintTop_toBottomOf="@+id/phoneTv" />
+
+    <EditText
+        android:id="@+id/passwordEd"
+        android:layout_width="163dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/phoneEd"
+        app:layout_constraintTop_toBottomOf="@+id/phoneEd" />
+
+    <TextView
+        android:id="@+id/confirmPasswordTv"
+        android:layout_width="174dp"
+        android:layout_height="50dp"
+        android:text="Confirm Password"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/passwordTv"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTv" />
+
+    <EditText
+        android:id="@+id/confirmPasswordEd"
+        android:layout_width="163dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/passwordEd"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEd" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="131dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        android:text="Sign Up"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainIn"
+        app:srcCompat="@drawable/fruitslogo" />
+
+
+</android.support.constraint.ConstraintLayout>
